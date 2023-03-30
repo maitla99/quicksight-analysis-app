@@ -1,0 +1,12 @@
+{
+  "AnalysisSummaryList": [
+    {
+      "AnalysisId": "string",
+      "Arn": "string",
+      "CreatedTime": "number",
+      "LastUpdatedTime": "number",
+      "Name": "string",
+      "Status": "string"
+    }
+  ]
+}
