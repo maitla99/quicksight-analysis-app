@@ -8,10 +8,10 @@ function App() {
   }, []);
 
   const fetchData = () => {
-    fetch("http://localhost:3000/data")
+    fetch("http://localhost:3000/AnalysisSummaryList")
       .then((response) => response.json())
       .then((data) => {
-        setDataList(data.AnalysisSummaryList);
+        setDataList(data);
       });
   };
 
@@ -20,7 +20,7 @@ function App() {
   };
 
   const handleBackup = () => {
-    fetch("http://localhost:3000/backup", {
+    fetch("http://localhost:3000/AnalysisSummaryList", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
